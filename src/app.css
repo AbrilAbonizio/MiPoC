@@ -71,3 +71,30 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Estilos generales para la app */
+.app-main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-centered {
+  margin: 40px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: #fff;
+  padding: 32px 24px;
+}
+
+.app-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}

@@ -57,27 +57,30 @@ export function App() {
   //Consultar datos
 
   return (
-    <Card>
-      <Button
-        option="Agregar Alumno"
-        onSelect={() => setSelected('agregar')}
-      ></Button>
-      <Button
-        option="Consultar Datos"
-        onSelect={() => setSelected('consultar')}
-      ></Button>
-      <Button
-        option="Modificar Datos"
-        onSelect={() => setSelected('modificar')}
-      ></Button>
-      <Button
-        option="Eliminar Alumno"
-        onSelect={() => setSelected('eliminar')}
-      ></Button>
-      <br />
-      {SelectedComponent && (
-        <SelectedComponent alumnos={alumnos} setAlumnos={setAlumnos} />
-      )}
-    </Card>
+    <div className="app-main">
+      <Card className="card-centered">
+        <div className="app-buttons">
+          <Button
+            option="Agregar Alumno"
+            onSelect={() => setSelected('agregar')}
+          />
+          <Button
+            option="Consultar Datos"
+            onSelect={() => setSelected('consultar')}
+          />
+          <Button
+            option="Modificar Datos"
+            onSelect={() => setSelected('modificar')}
+          />
+          <Button
+            option="Eliminar Alumno"
+            onSelect={() => setSelected('eliminar')}
+          />
+        </div>
+        {SelectedComponent && (
+          <SelectedComponent alumnos={alumnos} setAlumnos={setAlumnos} />
+        )}
+      </Card>
+    </div>
   );
 }
